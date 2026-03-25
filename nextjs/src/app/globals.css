@@ -85,14 +85,10 @@ body {
   overflow-x: hidden;
 }
 
+/* Background and body color are set in site-refine.css / template */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: inherit;
+  background: transparent;
 }
 
 a {

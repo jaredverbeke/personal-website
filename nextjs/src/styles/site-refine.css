@@ -1,0 +1,359 @@
+/* Personal site — overrides urFolio defaults: neutral palette, calmer type, less “template” feel */
+
+:root {
+  --site-bg: #f4f4f5;
+  --site-surface: #ffffff;
+  --site-text: #18181b;
+  --site-muted: #52525b;
+  --site-border: #e4e4e7;
+  --site-accent: #0f766e;
+  --site-accent-hover: #0d9488;
+  --site-radius: 12px;
+  --site-shadow: 0 1px 2px rgba(24, 24, 27, 0.06), 0 4px 12px rgba(24, 24, 27, 0.06);
+  --site-shadow-lg: 0 4px 6px rgba(24, 24, 27, 0.05), 0 12px 28px rgba(24, 24, 27, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  color: var(--site-text);
+  background: var(--site-bg);
+}
+
+/* Main canvas */
+.section {
+  background-color: var(--site-bg) !important;
+  padding: 0 28px;
+}
+
+.section .container {
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+/* Sidebar */
+.aside {
+  width: 260px;
+  background-color: var(--site-surface) !important;
+  border-right: 1px solid var(--site-border) !important;
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.03);
+}
+
+.aside .aside-inner {
+  padding: 28px 22px;
+}
+
+.aside .logo {
+  padding: 20px 0 8px;
+}
+
+.aside .logo a {
+  font-size: 1.125rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.02em;
+  color: var(--site-text) !important;
+  line-height: 1.35 !important;
+  padding: 0 !important;
+}
+
+.aside .logo a::before,
+.aside .logo a::after {
+  display: none !important;
+}
+
+.aside .nav {
+  margin: 32px 0 24px;
+}
+
+.aside .nav li a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--site-muted) !important;
+  line-height: 1.35;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--site-border) !important;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  border-radius: 0;
+}
+
+.aside .nav li a .fa {
+  opacity: 0.75;
+  width: 1.25rem;
+}
+
+.aside .nav li a:not(.active):hover {
+  padding-left: 4px;
+  color: var(--site-text) !important;
+}
+
+.aside .nav li a.active {
+  color: var(--site-accent) !important;
+  font-weight: 600;
+}
+
+.aside .copyright {
+  font-size: 0.75rem;
+  color: #a1a1aa !important;
+  line-height: 1.5;
+}
+
+.aside .copyright a {
+  color: var(--site-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.aside .copyright a:hover {
+  color: var(--site-accent);
+}
+
+.aside .nav-toggler {
+  background-color: var(--site-surface) !important;
+  border-color: var(--site-border) !important;
+}
+
+/* Headings */
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 1.75rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.03em;
+  color: var(--site-text) !important;
+}
+
+.section-title h2::before {
+  width: 36px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.section-title h2::after {
+  width: 14px;
+  height: 3px;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Shared text */
+.about .about-content .about-text h2,
+.about .about-content .about-text p,
+.about .about-content .personal-info .info-item p,
+.about .about-content h3.title,
+.home .intro h1,
+.home .intro p {
+  color: var(--site-text);
+}
+
+.about .about-content .about-text p,
+.about .about-content .personal-info .info-item p span,
+.about .about-content .timeline .timeline-text,
+.about .about-content .timeline .timeline-date,
+.home .intro p {
+  color: var(--site-muted) !important;
+}
+
+/* Home hero */
+.home .intro img {
+  width: 168px;
+  height: 168px;
+  border: 3px solid var(--site-surface);
+  box-shadow: var(--site-shadow-lg);
+}
+
+.home .intro h1 {
+  font-size: 1.875rem !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.03em;
+  margin-top: 24px !important;
+}
+
+.home .intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .intro .home-section-label {
+  margin-bottom: 10px;
+  font-weight: 650;
+  color: var(--site-text);
+  font-size: 0.9375rem;
+  letter-spacing: -0.02em;
+}
+
+.shadow-dark {
+  box-shadow: var(--site-shadow-lg) !important;
+}
+
+/* Buttons */
+.btn {
+  font-weight: 550;
+  border-radius: 999px;
+  padding: 11px 22px;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  background-color: var(--site-accent) !important;
+  box-shadow: none;
+}
+
+.btn:hover {
+  transform: none;
+  filter: brightness(1.06);
+  opacity: 0.98;
+}
+
+/* Cards / panels */
+.about .about-content .timeline,
+.service .service-item .service-item-inner,
+.blog .blog-item-inner {
+  background-color: var(--site-surface) !important;
+  border: 1px solid var(--site-border) !important;
+  border-radius: var(--site-radius);
+  box-shadow: var(--site-shadow);
+}
+
+.service .service-item .service-item-inner:hover {
+  box-shadow: var(--site-shadow-lg);
+  transform: translateY(-1px);
+}
+
+.about .about-content .personal-info .info-item p {
+  border-bottom-color: var(--site-border) !important;
+}
+
+/* Accent color (replaces template blue) */
+.contact .contact-info-item .icon .fa,
+.blog .blog-item-inner .blog-info .blog-tags a,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+.portfolio .portfolio-filter button.active,
+.service .service-item .service-item-inner .icon .fa,
+.about .about-content .about-text h2 span,
+.aside .nav li a:hover,
+.aside .nav li a.active,
+body .aside .nav li a.active {
+  color: var(--site-accent) !important;
+}
+
+body .portfolio .portfolio-filter button.active {
+  border-color: var(--site-accent) !important;
+}
+
+.blog .blog-item-inner .blog-img .blog-date,
+.service .service-item .service-item-inner:hover .icon,
+.about .about-content .timeline .circle-dot,
+.about .about-content .timeline .timeline-item::before,
+.about .about-content .skills .skill-item .progress .progress-in,
+.section-title h2::after,
+.section-title h2::before,
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after,
+.home .intro .social-links a {
+  background-color: var(--site-accent) !important;
+}
+
+/* Layout offsets — match sidebar width */
+.main-content {
+  padding-left: 260px;
+}
+
+.section {
+  left: 260px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 920px;
+  }
+}
+
+/* No promo banner — tighten layout */
+.temp-layout {
+  margin-top: 0 !important;
+  min-height: 100vh;
+}
+
+.theme button {
+  font-size: 1.25rem;
+  color: var(--site-muted);
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 6px 8px;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.theme button:hover {
+  color: var(--site-text);
+  opacity: 1;
+}
+
+.portfolio .portfolio-item-inner {
+  border: 1px solid var(--site-border) !important;
+  border-radius: var(--site-radius);
+  box-shadow: var(--site-shadow);
+}
+
+.portfolio .portfolio-item-inner:hover {
+  box-shadow: var(--site-shadow-lg);
+}
+
+.contact .contact-form .form-item .form-control {
+  border-radius: 10px;
+  border-color: var(--site-border) !important;
+}
+
+@media (max-width: 1199px) {
+  .aside {
+    left: -260px !important;
+  }
+
+  .section.open {
+    left: 260px !important;
+  }
+}
+
+/* --- Dark theme --- */
+[data-theme="dark"] {
+  --site-bg: #0a0a0b;
+  --site-surface: #18181b;
+  --site-text: #fafafa;
+  --site-muted: #a1a1aa;
+  --site-border: #27272a;
+  --site-accent: #2dd4bf;
+  --site-accent-hover: #5eead4;
+  --site-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --site-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .section {
+  background-color: var(--site-bg) !important;
+}
+
+[data-theme="dark"] .aside .logo a,
+[data-theme="dark"] .section-title h2,
+[data-theme="dark"] .home .intro h1 {
+  color: var(--site-text) !important;
+}
+
+[data-theme="dark"] .aside .nav li a:not(.active) {
+  color: var(--site-muted) !important;
+}
+
+[data-theme="dark"] .aside .nav li a.active {
+  color: var(--site-accent) !important;
+}
+
+[data-theme="dark"] .shadow-dark {
+  box-shadow: var(--site-shadow-lg) !important;
+}

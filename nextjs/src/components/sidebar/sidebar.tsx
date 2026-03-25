@@ -24,7 +24,7 @@ const Sidebar = () => {
       <div className="aside-inner">
         <div className="logo">
           <Link href="/" onClick={handleClose}>
-            Folio
+            Jared Verbeke
           </Link>
         </div>
         <ul className="nav">
@@ -93,10 +93,7 @@ const Sidebar = () => {
           </li>
         </ul>
         <div className="copyright">
-          Created with ❤️ By{" "}
-          <a href="http://alsiam.com" target="_blank" rel="noopener noreferrer">
-            Al Siam
-          </a>
+          © {new Date().getFullYear()} Jared Verbeke
         </div>
       </div>
     </aside>

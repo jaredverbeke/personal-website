@@ -5,17 +5,21 @@ import "./globals.css";
 import "../styles/style.css";
 import "../styles/blue.css";
 import "../styles/theme.css";
+import "../styles/site-refine.css";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
 import ThemeSwitch from "@/components/panel/ThemeSwitch";
-import FolioProBanner from "@/components/banner/folio-pro";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Folio the best Portfolio or Personal Website",
+  title: "Jared Verbeke",
   description:
-    "Folio is the best portfolio or personal website for developer, creator or businessman.",
+    "Business operations, CLM, and AI systems — portfolio and projects.",
 };
 
 export default function RootLayout({
@@ -25,14 +29,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${inter.className}`}>
         <Providers>
-          {/* Use this for your site */}
-          {/* <ThemeSwitch />
-          <Sidebar />
-          {children} */}
-          {/* Temporary for Banner */}
-          <FolioProBanner />
           <div className="temp-layout">
             <ThemeSwitch />
             <Sidebar />

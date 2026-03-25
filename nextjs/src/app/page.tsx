@@ -35,15 +35,7 @@ export default function Home() {
             </div>
 
             <div style={{ marginTop: 22 }}>
-              <p
-                style={{
-                  marginBottom: 10,
-                  fontWeight: 700,
-                  color: "#302e4d",
-                }}
-              >
-                What you will find here
-              </p>
+              <p className="home-section-label">What you will find here</p>
               <div
                 style={{
                   display: "flex",
