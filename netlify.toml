@@ -1,7 +1,11 @@
+# Publish ONLY the Next static export. Legacy HTML at repo root lives in legacy-static/
+# and is not deployed when publish points here.
+#
+# In Netlify: Site settings → Build & deploy → Build settings should NOT override
+# "Publish directory" to "/" or empty — use netlify.toml or set Publish directory to: nextjs/out
 [build]
-  base = "nextjs"
-  command = "npm run build"
-  publish = "out"
+  command = "cd nextjs && npm install && npm run build"
+  publish = "nextjs/out"
 
-# If you later want to add a custom 404 page, do it inside the Next app
-# so `next export` includes it in `out/`.
+[build.environment]
+  NODE_VERSION = "20"
