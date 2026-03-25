@@ -44,16 +44,16 @@ export default function Home() {
                   justifyContent: "center",
                 }}
               >
-                <a href="/about" className="btn">
+                <a href="/about" className="btn btn--ghost">
                   About
                 </a>
-                <a href="/interests" className="btn">
+                <a href="/interests" className="btn btn--ghost">
                   Interests
                 </a>
-                <a href="/blog" className="btn">
+                <a href="/blog" className="btn btn--ghost">
                   Accomplishments
                 </a>
-                <a href="/contact" className="btn">
+                <a href="/contact" className="btn btn--ghost">
                   Resume
                 </a>
               </div>

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "next-themes";
@@ -6,17 +6,17 @@ import { useTheme } from "next-themes";
 const ThemeSwitch = () => {
   const { theme, setTheme } = useTheme();
 
-    const toggleTheme = () => {
-      setTheme(theme === "light" ? "dark" : "light");
-    };
-
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
-    <div className="theme">
-      <button onClick={toggleTheme}>
+    <div className="theme theme--header">
+      <button type="button" onClick={toggleTheme} aria-label="Toggle theme">
         {theme === "light" ? <FaSun /> : <FaMoon />}
       </button>
     </div>
   );
 };
- export default ThemeSwitch;
+
+export default ThemeSwitch;

@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import "../styles/style.css";
 import "../styles/blue.css";
 import "../styles/theme.css";
 import "../styles/site-refine.css";
-import Sidebar from "@/components/sidebar/sidebar";
+import SiteHeader from "@/components/site-header/site-header";
 import Providers from "./providers";
-import ThemeSwitch from "@/components/panel/ThemeSwitch";
 
-const inter = Inter({
+const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -29,13 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${inter.className}`}>
+      <body className={`${sans.variable} ${sans.className}`}>
         <Providers>
-          <div className="temp-layout">
-            <ThemeSwitch />
-            <Sidebar />
-            {children}
-          </div>
+          <SiteHeader />
+          <div className="site-content">{children}</div>
         </Providers>
         <Analytics />
       </body>
