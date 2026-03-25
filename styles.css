@@ -113,6 +113,7 @@ main {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 56% center;
   border: 2px solid var(--line);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
 }
@@ -121,6 +122,10 @@ main {
   width: 220px;
   height: 220px;
   justify-self: end;
+  object-position: 72% center;
+  transform: scale(1.16);
+  border: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
 }
 
 .stats {
