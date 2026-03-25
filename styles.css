@@ -96,6 +96,15 @@ main {
   gap: 18px;
 }
 
+.hero-profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--line);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -319,6 +328,13 @@ h1 {
 
 .about p {
   color: var(--muted);
+}
+
+.about-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
 .site-footer {
