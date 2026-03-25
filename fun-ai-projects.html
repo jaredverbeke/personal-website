@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun: AI Projects | Jared Verbeke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header">
+      <a class="logo" href="./index.html">JV</a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./work-ai-projects.html">Work: AI Projects</a>
+        <a class="active" href="./fun-ai-projects.html">Fun: AI Projects</a>
+        <a href="./accomplishments.html">Accomplishments</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./interests.html">Interests</a>
+        <a href="./about.html">About</a>
+      </nav>
+      <a class="button ghost" href="https://www.linkedin.com/in/jaredverbeke/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </header>
+
+    <main class="standalone-main">
+      <section class="panel">
+        <div class="section-head">
+          <h2>Fun: AI Projects</h2>
+          <p>Creative and technical builds where I explore applied AI, product design, and real-world testing.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <img class="project-media" src="./assets/apple-photos-agent.svg" alt="Apple Photos Agent project visual" />
+            <p class="tag">Computer Vision + Automation</p>
+            <h3>Apple Photos Agent (OpenClaw)</h3>
+            <p>
+              Built an incremental Apple Photos triage workflow that identifies likely-delete candidates with a
+              conservative, review-first process.
+            </p>
+            <ul>
+              <li>Built with Python, AppleScript, and cloud classification workflows</li>
+              <li>Includes score thresholds and protections for people, pets, and favorites</li>
+              <li>Automated with launchd for recurring batch runs</li>
+            </ul>
+            <div class="links-row">
+              <a href="https://github.com/jaredverbeke" target="_blank" rel="noreferrer">GitHub Profile</a>
+              <a href="https://www.linkedin.com/in/jaredverbeke/" target="_blank" rel="noreferrer">Project Context</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="project-media" src="./assets/treadlab.svg" alt="TreadLab project visual" />
+            <p class="tag">Fitness + Product + AI</p>
+            <h3>TreadLab (TireBot)</h3>
+            <p>
+              Built a route-aware recommendation app for gravel cycling tire and pressure strategy, balancing speed,
+              traction, and puncture risk.
+            </p>
+            <ul>
+              <li>Built with Streamlit + Python scoring models</li>
+              <li>Supports route segments, GPX context, and setup recommendations</li>
+              <li>Outputs ranked alternatives plus front and rear pressure guidance</li>
+            </ul>
+            <div class="links-row">
+              <a href="https://github.com/jaredverbeke/TireBot" target="_blank" rel="noreferrer">GitHub Repo</a>
+              <a href="https://jaredverbeke.github.io/TireBot/" target="_blank" rel="noreferrer">Live App / Whitepaper</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Jared Verbeke</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/jaredverbeke/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:jaredverbeke@gmail.com">Contact</a>
+        <a href="./resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

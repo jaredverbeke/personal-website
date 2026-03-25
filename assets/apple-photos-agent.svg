@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Apple Photos Agent">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2540"/>
+      <stop offset="100%" stop-color="#0b111d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="70" y="80" width="1060" height="540" rx="22" fill="#111a2a" stroke="#3e4c67" stroke-width="2"/>
+  <text x="120" y="170" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#ecf1ff">Apple Photos Agent</text>
+  <text x="120" y="220" font-family="Inter, sans-serif" font-size="28" fill="#a9b3c7">Incremental photo triage with safe cleanup workflow</text>
+  <rect x="120" y="280" width="260" height="180" rx="14" fill="#0d1423" stroke="#4e5d7c"/>
+  <rect x="470" y="280" width="260" height="180" rx="14" fill="#0d1423" stroke="#4e5d7c"/>
+  <rect x="820" y="280" width="260" height="180" rx="14" fill="#0d1423" stroke="#4e5d7c"/>
+  <text x="145" y="355" font-family="Inter, sans-serif" font-size="28" fill="#70ffcf">Scan New</text>
+  <text x="145" y="392" font-family="Inter, sans-serif" font-size="22" fill="#d9e1f5">Candidates</text>
+  <text x="498" y="355" font-family="Inter, sans-serif" font-size="28" fill="#70ffcf">Score + Rank</text>
+  <text x="498" y="392" font-family="Inter, sans-serif" font-size="22" fill="#d9e1f5">with Guardrails</text>
+  <text x="845" y="355" font-family="Inter, sans-serif" font-size="28" fill="#70ffcf">Review Album</text>
+  <text x="845" y="392" font-family="Inter, sans-serif" font-size="22" fill="#d9e1f5">Sync</text>
+  <path d="M392 365h58" stroke="#7ca8ff" stroke-width="6"/>
+  <path d="M742 365h58" stroke="#7ca8ff" stroke-width="6"/>
+</svg>
