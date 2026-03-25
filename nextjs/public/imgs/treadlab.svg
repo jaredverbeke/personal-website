@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="TreadLab app">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14273e"/>
+      <stop offset="100%" stop-color="#08101b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg2)"/>
+  <rect x="70" y="80" width="1060" height="540" rx="22" fill="#101a2a" stroke="#3e4c67" stroke-width="2"/>
+  <text x="120" y="170" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#ecf1ff">TreadLab (TireBot)</text>
+  <text x="120" y="220" font-family="Inter, sans-serif" font-size="28" fill="#a9b3c7">Route-aware tire and pressure recommendations</text>
+  <polyline points="130,500 290,420 450,460 610,350 770,370 930,260 1090,300" fill="none" stroke="#70ffcf" stroke-width="8"/>
+  <circle cx="290" cy="420" r="10" fill="#7ca8ff"/>
+  <circle cx="610" cy="350" r="10" fill="#7ca8ff"/>
+  <circle cx="930" cy="260" r="10" fill="#7ca8ff"/>
+  <rect x="120" y="280" width="300" height="140" rx="14" fill="#0d1423" stroke="#4e5d7c"/>
+  <text x="145" y="340" font-family="Inter, sans-serif" font-size="24" fill="#70ffcf">Segment + GPX Input</text>
+  <rect x="450" y="280" width="300" height="140" rx="14" fill="#0d1423" stroke="#4e5d7c"/>
+  <text x="475" y="340" font-family="Inter, sans-serif" font-size="24" fill="#70ffcf">Risk + Speed Model</text>
+  <rect x="780" y="280" width="300" height="140" rx="14" fill="#0d1423" stroke="#4e5d7c"/>
+  <text x="805" y="340" font-family="Inter, sans-serif" font-size="24" fill="#70ffcf">Ranked Setups</text>
+</svg>

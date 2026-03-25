@@ -1,0 +1,7 @@
+[build]
+  base = "nextjs"
+  command = "npm run build"
+  publish = "out"
+
+# If you later want to add a custom 404 page, do it inside the Next app
+# so `next export` includes it in `out/`.
