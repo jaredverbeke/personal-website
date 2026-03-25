@@ -368,6 +368,23 @@ h1 {
   background: rgba(8, 13, 24, 0.75);
 }
 
+.strava-iframe-wrap {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.strava-iframe-wrap:first-child {
+  margin-top: 0;
+}
+
+.strava-iframe {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
 .strava-title {
   margin: 0;
   color: var(--accent);

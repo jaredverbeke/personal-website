@@ -67,23 +67,37 @@
             </ul>
             <div class="strava-widget" aria-label="Strava overview widget">
               <p class="strava-title">Strava Overview</p>
-              <div class="strava-stats">
-                <div class="strava-stat">
-                  <p class="value">Cycling</p>
-                  <p class="label">Primary sport</p>
-                </div>
-                <div class="strava-stat">
-                  <p class="value">Live</p>
-                  <p class="label" id="strava-status-label">Recent rides on profile</p>
-                </div>
-                <div class="strava-stat">
-                  <p class="value" id="strava-focus-value">Endurance</p>
-                  <p class="label" id="strava-focus-label">Training focus</p>
-                </div>
+              <div class="strava-iframe-wrap">
+                <iframe
+                  height="454"
+                  width="300"
+                  frameborder="0"
+                  allowtransparency="true"
+                  scrolling="no"
+                  class="strava-iframe"
+                  title="Strava athlete overview"
+                  src="https://www.strava.com/athletes/1764516/latest-rides/f0979d88644cc49997edb9b0f26f4a62f33bf73f"
+                ></iframe>
+              </div>
+              <div class="strava-iframe-wrap">
+                <iframe
+                  height="160"
+                  width="300"
+                  frameborder="0"
+                  allowtransparency="true"
+                  scrolling="no"
+                  class="strava-iframe"
+                  title="Strava athlete activity summary"
+                  src="https://www.strava.com/athletes/1764516/activity-summary/f0979d88644cc49997edb9b0f26f4a62f33bf73f"
+                ></iframe>
               </div>
               <div class="links-row">
                 <a href="https://www.strava.com/athletes/1764516" target="_blank" rel="noreferrer">View Strava Profile</a>
-                <a href="https://www.strava.com/athletes/1764516#interval?interval=recently-active" target="_blank" rel="noreferrer">Recent Activity</a>
+                <a
+                  href="https://www.strava.com/athletes/1764516#interval?interval=recently-active"
+                  target="_blank"
+                  rel="noreferrer"
+                >Recent Activity</a>
               </div>
             </div>
           </article>
