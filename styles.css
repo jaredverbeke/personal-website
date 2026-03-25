@@ -92,6 +92,33 @@ main {
   gap: 18px;
 }
 
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.stats article {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  background: rgba(8, 13, 24, 0.65);
+}
+
+.value {
+  margin: 0;
+  color: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.label {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
 .eyebrow {
   color: var(--accent);
   text-transform: uppercase;
@@ -183,6 +210,14 @@ h1 {
   color: var(--muted);
 }
 
+.card ul {
+  margin: 12px 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  display: grid;
+  gap: 6px;
+}
+
 .tag {
   margin: 0 0 8px;
   color: var(--accent);
@@ -224,6 +259,29 @@ h1 {
   color: var(--text);
 }
 
+.resume-grid,
+.interest-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.resume-grid article,
+.interest-layout article {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  background: rgba(8, 13, 24, 0.65);
+}
+
+.resume-grid ul {
+  margin: 10px 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
 .about p {
   color: var(--muted);
 }
@@ -254,5 +312,9 @@ h1 {
 
   .panel {
     padding: 20px;
+  }
+
+  .hero {
+    min-height: 58vh;
   }
 }
